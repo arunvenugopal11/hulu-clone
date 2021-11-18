@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Results from '../components/Results'
@@ -24,9 +23,7 @@ export default function Home({results}) {
 export async function getServerSideProps(context){
   const genre = context.query.genre;
   const reqUrl = `https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTopRated.url}`;
-  console.log({reqUrl});
   const request = await fetch(reqUrl).then((res) => {console.log(res); return res.json()})
-  console.log(request);
   return {
     props: {
       results: request.results
