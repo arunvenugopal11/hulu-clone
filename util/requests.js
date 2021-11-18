@@ -6,10 +6,6 @@ export default {
     //     url: `/trending/all/day/?api_key=${API_KEY}`
     //     // `https://api.themoviedb.org/3/trending/all/day?api_key=<<api_key>>`
     // },
-    fetchTopRated: {
-        title: 'Top Rated',
-        url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`
-    },
     fetchActionMovies: {
         title: 'Action',
         url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
@@ -45,5 +41,9 @@ export default {
     fetchTv: {
         title: 'TV Movie',
         url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
+    },
+    fetchTopRated: {
+        title: 'Top Rated',
+        url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`
     }
 }
