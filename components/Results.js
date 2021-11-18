@@ -1,4 +1,3 @@
-import requests from "../../util/requests"
 import Thumbnail from "./Thumbnail"
 import FlipMove from 'react-flip-move'
 
